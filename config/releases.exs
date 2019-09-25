@@ -5,7 +5,7 @@ db_url = System.fetch_env!("DB_URL")
 secret_key_base = System.fetch_env!("SECRET_KEY_BASE")
 port = System.fetch_env!("PORT")
 
-config :el_kube, ElKube.Repo, url: db_url
+#config :el_kube, ElKube.Repo, url: db_url
 
 config :el_kube, ElKubeWeb.Endpoint,
   http: [port: port],

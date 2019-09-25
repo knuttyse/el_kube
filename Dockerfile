@@ -33,7 +33,8 @@ RUN mkdir -p /opt/release \
     && mv _build/${MIX_ENV}/rel/el_kube /opt/release
 
 # Create the runtime container
-FROM erlang:22-alpine as runtime
+#FROM erlang:22-alpine as runtime
+FROM elixir:1.9.0-alpine AS runtime
 
 # Install runtime dependencies
 RUN apk update \
